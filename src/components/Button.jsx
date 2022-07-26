@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
+import '../styles/Button.css'
 
-//Uso desestructuracion para no usar "props.text"
-function Button( { text } ) {
+//Uso desestructuracion para no usar "props.text"... "handleClick" es una función que se ejecutara al dar click
+function Button( { text, buttonClick, handleClick } ) {
   return(
-    <button> { text } </button>
+    <button className={ buttonClick ? 'button-click' : 'button-restart' }
+            onClick={ handleClick }> { text } </button>
   );
 }
 
