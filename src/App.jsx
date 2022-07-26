@@ -1,6 +1,7 @@
 import './App.css';
 import yinYangLogo from './images/yinYang.png';
 import Button from './components/Button';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
              alt='Logo seleccionado' />
       </div>
       <div className='counter-container'>
+        <Counter
+          numClicks='x' />
         <Button 
           text='Click'
           buttonClick={ true }
